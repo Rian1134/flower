@@ -18,13 +18,8 @@ body {
    align-items: center;
 }
 
-.container h1 {
-    color: white;
-    font-size: 50px;
-}
-
 .flower{
-    transform: translate(0px, 300px);
+    transform: translate(0px, 200px);
     height: 100px;
     position: relative;
     z-index: 1;
@@ -289,91 +284,112 @@ body {
 
 #rose-petal-left{
     animation: bloom-left 1s 3.5s backwards;
+    display: none
 }
 
 #rose2-petal-left{
     animation: bloom-right 1s 3.5s backwards;
-    
+    display: none
 }
 
 #rose3-petal-left{
     animation: bloom-left 1s 3.5s backwards;
+    display: none
 }
 
 #rose-petal-right{
     animation: bloom-right 1s 3.5s backwards;
+    display: none;
 }
 
 #rose2-petal-right{
     animation: bloom-left 1s 3.5s backwards;
+    display: none;
 }
 
 #rose3-petal-right{
     animation: bloom-right 1s 3.5s backwards;
+    display: none;
 }
 
 #rose-petal-in-left{
     animation: bloom-in-left 1s 3.5s backwards;
+    display: none;
 }
 
 #rose2-petal-in-left{
     animation: bloom-in-right 1s 3.5s backwards;
+    display: none;
 }
 
 #rose3-petal-in-left{
     animation: bloom-in-left 1s 3.5s backwards;
+    display: none;
 }
 
 #rose-petal-in-right{
     animation: bloom-in-right 1s 3.5s backwards;
+    display: none;
 }
 
 #rose2-petal-in-right{
     animation: bloom-in-left 1s 3.5s backwards;
+    display: none;
 }
 
 #rose3-petal-in-right{
     animation: bloom-in-right 1s 3.5s backwards;
+    display: none;
 }
 
 #rose-petal-center{
     animation: bloom-center 1s 3.5s backwards, blinking 2s 2s infinite backwards alternate-reverse;
+    display: none;
 }
 
 #rose2-petal-center{
     animation: bloom-center 1s 3.5s backwards, blinking 2s 3s infinite backwards alternate-reverse;
+    display: none;
 }
 
 #rose3-petal-center{
     animation: bloom-center 1s 3.5s backwards, blinking 2s 1s infinite backwards alternate-reverse;
+    display: none;
 }
 
 #rose-stem{
     animation: grow 5s 0.05s backwards;
+    display: none;
 }
 
 #rose2-stem{
     animation: grow 5s 0.2s backwards;
+    display: none;
 }
 
 #rose3-stem{
-    animation: grow 5s backwards;
+    animation: grow 5s  backwards;
+    display: none;
 }
 
 #rose-leaf{
     animation: leaf-grow-right 1s 3s backwards;
+    display: none;
 }
 
 #rose-leaf-2{
     animation: leaf2-grow-left 1s 3s backwards;
+    display: none;
 }
 
 #rose2-leaf{
     animation: leaf-grow-right 1s 3s backwards;
+    display: none;
 }
 
 #rose3-leaf{
     animation: leaf-grow-left 1s 3s backwards;
+    display: none;
 }
 
 @keyframes bloom-left {
@@ -469,3 +485,26 @@ body {
         transform: translate(-15px, 150px) rotate(0deg) scale(100%);
     }
 }
+
+.btn button{
+    background-color: black;
+    border: 3px rgb(49, 49, 49) solid;
+    color: white;
+    font-size: 20px;
+    border-radius: 50px;
+    transform: translate(-95px, 500px);
+    position: absolute;
+    width: 100px;
+    height: 50px;
+}
+
+.btn button:hover{
+    background-color: rgb(13, 190, 255);
+    border: 3px rgb(0, 146, 204) solid;
+}
+.btn button:active{
+    background-color: white;
+    border: 5px gray solid;
+    color: black;
+}
+
